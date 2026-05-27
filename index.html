@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail TP - Security Analyst & Builder</title>
+    <meta name="description" content="Portfolio of Ismail TP, Security Analyst, Problem Solver, and Builder.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="ph ph-shield-check"></i>
+                <span class="logo-text">Ismail TP</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#reports">Reports</a>
+                <a href="#experience">Experience</a>
+                <a href="#certs">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="assets/resume/ismail_resume.pdf" target="_blank" download class="btn btn-primary btn-sm"><i
+                        class="ph ph-download-simple"></i> Download Resume</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero container reveal">
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm Ismail TP</p>
+                <h1 class="hero-title">
+                    Security<br>
+                    Researcher &<br>
+                    <span class="highlight">Penetration Tester</span>
+                </h1>
+                <p class="hero-description">
+                    I help organizations find weaknesses before attackers do.<br>
+                    I build, break and secure systems.
+                </p>
+
+                <div class="hero-cta-group">
+                    <div class="hero-cta">
+                        <a href="projects.html" class="btn btn-primary"><i class="ph ph-user"></i> View Projects</a>
+                        <a href="#contact" class="btn btn-light-shadow">Let's Connect <i
+                                class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <div class="social-links-stacked">
+                        <a href="https://www.linkedin.com/in/ismail-tp" target="_blank" class="social-icon-btn"><i
+                                class="ph ph-linkedin-logo"></i></a>
+                        <a href="https://github.com/IsmailTP" target="_blank" class="social-icon-btn"><i
+                                class="ph ph-github-logo"></i></a>
+                        <a href="mailto:ismailtp.official@gmail.com" class="social-icon-btn"><i
+                                class="ph ph-envelope-simple"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img src="assets/images/ismail-tp-security-analyst.png" alt="Ismail TP Profile" class="hero-profile-image">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <div class="about-card dark-bg">
+                <div class="about-text">
+                    <div class="section-header-inline">
+                        <div class="icon-circle"><i class="ph ph-user"></i></div>
+                        <h2>About Me</h2>
+                    </div>
+                    <p>A penetration tester and security analyst with a strong focus on Active Directory, web & API
+                        security, and real-world attack simulations. I build cybersecurity labs, automate security
+                        workflows, and design learning platforms that simplify complex security concepts.</p>
+                </div>
+                <div class="focus-areas">
+                    <div class="focus-card accent-blue">
+                        <i class="ph ph-shield-check"></i>
+                        <h3>Active Directory Security</h3>
+                        <p>AD enumeration, privilege escalation and enterprise lab simulations.</p>
+                    </div>
+                    <div class="focus-card accent-purple">
+                        <i class="ph ph-globe"></i>
+                        <h3>Web Application Testing</h3>
+                        <p>Testing modern web applications for vulnerabilities and business logic flaws.</p>
+                    </div>
+                    <div class="focus-card accent-cyan">
+                        <i class="ph ph-key"></i>
+                        <h3>API Security</h3>
+                        <p>Authentication testing, authorization flaws and API attack surface analysis.</p>
+                    </div>
+                    <div class="focus-card accent-zinc">
+                        <i class="ph ph-terminal-window"></i>
+                        <h3>Security Automation</h3>
+                        <p>Building Python tools, custom workflows and cybersecurity utilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid for Skills & Experience -->
+        <div class="container dual-grid">
+            <!-- Skills Section -->
+            <section id="skills" class="skills-section">
+                <div class="section-header-flex">
+                    <div class="title-with-icon">
+                        <i class="ph ph-brackets-angle"></i>
+                        <h2>Technical Skills</h2>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3><i class="ph ph-globe"></i> Web Security</h3>
+                        <ul>
+                            <li>Web App Testing</li>
+                            <li>SQL Injection</li>
+                            <li>XSS</li>
+                            <li>CSRF</li>
+                            <li>IDOR</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="ph ph-users"></i> Active Directory</h3>
+                        <ul>
+                            <li>AD Enumeration</li>
+                            <li>Privilege Escalation</li>
+                            <li>Kerberoasting</li>
+                            <li>Pass-the-Hash</li>
+                            <li>AD Exploitation</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="ph ph-share-network"></i> Networking</h3>
+                        <ul>
+                            <li>TCP/IP</li>
+                            <li>Port Scanning</li>
+                            <li>Network Mapping</li>
+                            <li>Routing</li>
+                            <li>Traffic Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="ph ph-key"></i> API Security</h3>
+                        <ul>
+                            <li>API Testing</li>
+                            <li>Auth Bypass</li>
+                            <li>Data Exposure</li>
+                            <li>Parameter Fuzzing</li>
+                            <li>Postman</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="ph ph-wrench"></i> Tools</h3>
+                        <ul>
+                            <li>Nmap</li>
+                            <li>Burp Suite</li>
+                            <li>Wireshark</li>
+                            <li>Metasploit</li>
+                            <li>More...</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="ph ph-file-code"></i> Python Automation</h3>
+                        <ul>
+                            <li>Scripting</li>
+                            <li>Automation</li>
+                            <li>Data Processing</li>
+                            <li>Tool Development</li>
+                            <li>Exploitation Scripts</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="experience-section">
+                <div class="section-header-flex">
+                    <div class="title-with-icon">
+                        <i class="ph ph-briefcase"></i>
+                        <h2>Experience</h2>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">Oct 2025 - Present</span>
+                        <h3 class="timeline-title">R&D Member</h3>
+                        <span class="timeline-company">Offenso Hackers Academy</span>
+                        <ul class="timeline-details">
+                            <li>Designed and deployed 5-10 hands-on penetration testing labs simulating real-world
+                                attack scenarios for events.</li>
+                            <li>Built and tested exploit environments for web, network and Active Directory attacks.
+                            </li>
+                            <li>Developed backend validation logic and automation scripts to enhance lab reliability and
+                                user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Featured Projects -->
+        <section id="projects" class="container">
+            <div class="section-header-flex">
+                <div class="title-with-icon">
+                    <i class="ph ph-star"></i>
+                    <h2>Featured Projects</h2>
+                </div>
+                <a href="projects.html" class="link-with-icon">View All Projects <i class="ph ph-arrow-right"></i></a>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="assets/images/the_void.png" alt="The Void Mockup" class="project-image">
+                    <div class="project-info">
+                        <h3>The Void <i class="ph ph-arrow-square-out"></i></h3>
+                        <span class="project-subtitle">Networking Learning Platform</span>
+                        <p>Interactive platform with structured roadmaps, simulations and hands-on labs to simplify
+                            networking concepts.</p>
+                        <div class="tags">
+                            <span class="tag">TCP/IP</span>
+                            <span class="tag">Subnetting</span>
+                            <span class="tag">Routing</span>
+                            <span class="tag">Wireshark</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><strong>12+</strong><span>Modules</span></div>
+                            <div class="metric"><strong>20+</strong><span>Mini Labs</span></div>
+                            <div class="metric"><strong>100%</strong><span>Responsive</span></div>
+                            <a href="https://ismailtp.github.io/the-void-networking-roadmap-v2/" target="_blank"
+                                class="btn btn-light-blue btn-sm">Live Preview <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="assets/images/into_the_void.png" alt="Into The Void Mockup" class="project-image">
+                    <div class="project-info">
+                        <h3>Into The Void <i class="ph ph-arrow-square-out"></i></h3>
+                        <span class="project-subtitle">Prompt Injection Challenge</span>
+                        <p>A 7-level AI prompt injection challenge simulating real-world AI exploitation through
+                            progressive attack scenarios.</p>
+                        <div class="tags">
+                            <span class="tag">AI Security</span>
+                            <span class="tag">Prompt Injection</span>
+                            <span class="tag">Exploitation</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><strong>7</strong><span>Levels</span></div>
+                            <div class="metric"><strong>Multiple</strong><span>Endings</span></div>
+                            <div class="metric"><strong>∞</strong><span>Possibilities</span></div>
+                            <a href="javascript:void(0)" class="btn btn-light-blue btn-sm"
+                                title="Not uploaded yet but completed" style="cursor: not-allowed; opacity: 0.6;">Live
+                                Preview <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Grid: Attack Map, Research & Certifications -->
+        <div class="container dual-grid-bottom">
+            <!-- Left Column: Attack Map & Certifications -->
+            <div class="left-col">
+                <!-- Attack Map -->
+                <section class="workflow-section">
+                    <div class="title-with-icon mb-4">
+                        <i class="ph ph-git-merge"></i>
+                        <h2>Security Workflow</h2>
+                    </div>
+                    <div class="kill-chain">
+                        <div class="kc-step">
+                            <div class="kc-icon"><i class="ph ph-target"></i></div>
+                            <h4>Recon</h4>
+                            <p>Gather information about the target.</p>
+                        </div>
+                        <div class="kc-divider"></div>
+                        <div class="kc-step">
+                            <div class="kc-icon"><i class="ph ph-magnifying-glass"></i></div>
+                            <h4>Enumeration</h4>
+                            <p>Identify systems, users and services.</p>
+                        </div>
+                        <div class="kc-divider"></div>
+                        <div class="kc-step">
+                            <div class="kc-icon"><i class="ph ph-lightning"></i></div>
+                            <h4>Exploitation</h4>
+                            <p>Exploit vulnerabilities to gain access.</p>
+                        </div>
+                        <div class="kc-divider"></div>
+                        <div class="kc-step">
+                            <div class="kc-icon"><i class="ph ph-git-branch"></i></div>
+                            <h4>Persistence</h4>
+                            <p>Maintain access inside the system.</p>
+                        </div>
+                        <div class="kc-divider"></div>
+                        <div class="kc-step">
+                            <div class="kc-icon"><i class="ph ph-key"></i></div>
+                            <h4>Privilege Escalation</h4>
+                            <p>Gain higher access and control.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section id="certifications" class="card-section mt-4">
+                    <div class="title-with-icon mb-4">
+                        <i class="ph ph-certificate"></i>
+                        <h2>Certifications</h2>
+                    </div>
+                    <div class="certs-list">
+                        <!-- Cert 1 -->
+                        <div class="cert-item">
+                            <img src="https://offensoacademy.com/wp-content/uploads/2026/03/ADIS.webp"
+                                alt="Offenso ADIS" class="cert-logo" style="object-fit: contain; padding: 4px;">
+                            <div class="cert-info">
+                                <h4>Advanced Diploma in Information Security (ADIS)</h4>
+                                <span class="cert-org">Offenso Hackers Academy</span>
+                            </div>
+                            <div class="cert-date">Aug 2026</div>
+                        </div>
+                        <div class="cert-item">
+                            <img src="https://www.comptia.org/_next/image/?url=https%3A%2F%2Fimages3.cmp.optimizely.com%2F888e2ff0b71111ef888eca5646afc7d8%3Fwidth%3D300%26height%3D300&w=384&q=90"
+                                alt="CompTIA PenTest+" class="cert-logo" style="object-fit: contain; padding: 4px;">
+                            <div class="cert-info">
+                                <h4>CompTIA PenTest+</h4>
+                                <span class="cert-org">In Progress</span>
+                            </div>
+                            <div class="cert-date blue-badge">Expected Sep 2026</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: VAPT Reports -->
+            <div class="right-col">
+                <section id="reports" class="card-section h-100">
+                    <div class="section-header-flex mb-4">
+                        <div class="title-with-icon">
+                            <i class="ph ph-shield-check"></i>
+                            <h2>Reports</h2>
+                        </div>
+                        <a href="reports.html" class="link-with-icon">View All <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    <ul class="research-list">
+                        <li>
+                            <a href="assets/reports/VAPT-AD-Ismail.pdf" target="_blank" class="research-title"><i
+                                    class="ph ph-file-pdf"></i> Active Directory VAPT</a>
+                            <div class="report-meta"><span><i class="ph ph-flask"></i> Custom Lab</span> <i
+                                    class="ph-fill ph-circle meta-dot"></i> <span><i class="ph ph-windows-logo"></i>
+                                    Windows AD</span> <i class="ph-fill ph-circle meta-dot"></i> <span
+                                    class="diff-hard">Hard</span></div>
+                        </li>
+                        <li>
+                            <a href="assets/reports/VAPT-Metasploitable-2-smb-ismail.pdf" target="_blank"
+                                class="research-title"><i class="ph ph-file-pdf"></i> Metasploitable 2 SMB</a>
+                            <div class="report-meta"><span><i class="ph ph-cube"></i> VulnHub</span> <i
+                                    class="ph-fill ph-circle meta-dot"></i> <span><i class="ph ph-linux-logo"></i> SMB
+                                    Exploitation</span> <i class="ph-fill ph-circle meta-dot"></i> <span
+                                    class="diff-easy">Easy</span></div>
+                        </li>
+                        <li>
+                            <a href="assets/reports/VAPT-ROOTME-Ismail.pdf" target="_blank" class="research-title"><i
+                                    class="ph ph-file-pdf"></i> RootMe VAPT</a>
+                            <div class="report-meta"><span><i class="ph ph-cube"></i> TryHackMe</span> <i
+                                    class="ph-fill ph-circle meta-dot"></i> <span><i class="ph ph-linux-logo"></i> Web
+                                    Exploitation</span> <i class="ph-fill ph-circle meta-dot"></i> <span
+                                    class="diff-easy">Easy</span></div>
+                        </li>
+                        <li>
+                            <a href="assets/reports/ismail-splunk.pdf" target="_blank" class="research-title"><i
+                                    class="ph ph-file-pdf"></i> Splunk Security Analysis</a>
+                            <div class="report-meta"><span><i class="ph ph-flask"></i> Custom Lab</span> <i
+                                    class="ph-fill ph-circle meta-dot"></i> <span><i class="ph ph-magnifying-glass"></i>
+                                    SIEM / Hunt</span> <i class="ph-fill ph-circle meta-dot"></i> <span
+                                    class="diff-medium">Medium</span></div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Contact/CTA Section -->
+        <section id="contact" class="container mt-6">
+            <div class="contact-cta">
+                <div class="contact-text">
+                    <h2>Interested in security research, lab development, and penetration testing opportunities.</h2>
+                </div>
+                <div class="contact-actions">
+                    <a href="mailto:ismailtp.official@gmail.com" class="btn btn-primary"><i class="ph ph-envelope-simple"></i> Email</a>
+                    <a href="https://github.com/IsmailTP" target="_blank" class="btn btn-light-shadow"><i class="ph ph-github-logo"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/ismail-tp" target="_blank" class="btn btn-light-shadow"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph ph-shield-check"></i>
+                    <div class="logo-text-group">
+                        <span class="logo-text">Ismail TP</span>
+                        <span class="logo-subtext">Security Analyst | Penetration Tester</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:ismailtp.official@gmail.com"><i class="ph ph-envelope-simple"></i>
+                    ismailtp.official@gmail.com</a>
+                <a href="https://www.linkedin.com/in/ismail-tp" target="_blank"><i class="ph ph-linkedin-logo"></i>
+                    linkedin.com/in/ismail-tp</a>
+                <a href="#"><i class="ph ph-map-pin"></i> Kozhikode, Kerala, India</a>
+                <a href="https://github.com/IsmailTP" target="_blank"><i class="ph ph-github-logo"></i>
+                    github.com/IsmailTP</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ismail TP. All rights reserved.</p>
+            <div class="built-with">
+                Built with passion <i class="ph ph-heart"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
