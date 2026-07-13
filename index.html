@@ -285,6 +285,78 @@
             </div>
         </section>
 
+        <!-- Live GitHub Statistics -->
+        <section id="github-stats" class="container reveal" style="margin-bottom: var(--section-gap);">
+            <div class="section-header-flex">
+                <div class="title-with-icon">
+                    <i class="ph ph-github-logo"></i>
+                    <h2>Live GitHub Stats</h2>
+                </div>
+            </div>
+            
+            <div id="gh-error-msg" style="display: none; background: #fee2e2; color: #b91c1c; padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 2rem; font-weight: 500;">
+                <i class="ph ph-warning-circle"></i> Failed to load GitHub statistics.
+            </div>
+
+            <!-- Overall Stats Grid -->
+            <div class="stats-overview-grid" id="gh-stats-overview">
+                <!-- Skeletons -->
+                <div class="stat-card skeleton-card">
+                    <div class="stat-icon skeleton"></div>
+                    <div class="stat-info">
+                        <div class="skeleton skeleton-text" style="width: 40px; height: 28px; margin-bottom: 5px;"></div>
+                        <div class="skeleton skeleton-text" style="width: 80px;"></div>
+                    </div>
+                </div>
+                <div class="stat-card skeleton-card">
+                    <div class="stat-icon skeleton"></div>
+                    <div class="stat-info">
+                        <div class="skeleton skeleton-text" style="width: 40px; height: 28px; margin-bottom: 5px;"></div>
+                        <div class="skeleton skeleton-text" style="width: 80px;"></div>
+                    </div>
+                </div>
+                <div class="stat-card skeleton-card">
+                    <div class="stat-icon skeleton"></div>
+                    <div class="stat-info">
+                        <div class="skeleton skeleton-text" style="width: 40px; height: 28px; margin-bottom: 5px;"></div>
+                        <div class="skeleton skeleton-text" style="width: 80px;"></div>
+                    </div>
+                </div>
+                <div class="stat-card skeleton-card">
+                    <div class="stat-icon skeleton"></div>
+                    <div class="stat-info">
+                        <div class="skeleton skeleton-text" style="width: 40px; height: 28px; margin-bottom: 5px;"></div>
+                        <div class="skeleton skeleton-text" style="width: 80px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-details-grid">
+                <!-- Top Languages -->
+                <div class="stats-card-main">
+                    <h3>Top Languages</h3>
+                    <div id="gh-languages-container">
+                        <div class="skeleton skeleton-text" style="height: 12px; margin-bottom: 1.5rem; width: 100%;"></div>
+                        <div class="skeleton skeleton-text" style="height: 12px; margin-bottom: 1.5rem; width: 80%;"></div>
+                        <div class="skeleton skeleton-text" style="height: 12px; margin-bottom: 1.5rem; width: 60%;"></div>
+                    </div>
+                </div>
+
+                <!-- Top Repos -->
+                <div class="stats-card-main">
+                    <h3>Top Repositories</h3>
+                    <div class="gh-top-repos" id="gh-top-repos">
+                        <div class="skeleton skeleton-text" style="height: 60px; margin-bottom: 1rem; width: 100%; border-radius: var(--radius-sm);"></div>
+                        <div class="skeleton skeleton-text" style="height: 60px; margin-bottom: 1rem; width: 100%; border-radius: var(--radius-sm);"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gh-footer-meta" id="gh-last-updated">
+                <span class="skeleton skeleton-text" style="width: 200px; height: 14px; display: inline-block;"></span>
+            </div>
+        </section>
+
         <!-- Bottom Grid: Attack Map, Research & Certifications -->
         <div class="container dual-grid-bottom">
             <!-- Left Column: Attack Map & Certifications -->
@@ -452,6 +524,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="github.js"></script>
 </body>
 
 </html>
