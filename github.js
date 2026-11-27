@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const USERNAME = 'IsmailTP';
     const CACHE_DURATION = 15 * 60 * 1000; // 15 minutes
-    
+
     const elements = {
         overview: document.getElementById('gh-stats-overview'),
         languages: document.getElementById('gh-languages-container'),
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function fetchGitHubData() {
         const cachedData = localStorage.getItem(`gh_data_${USERNAME}`);
         const cacheTime = localStorage.getItem(`gh_time_${USERNAME}`);
-        
+
         if (cachedData && cacheTime && (Date.now() - parseInt(cacheTime) < CACHE_DURATION)) {
             console.log('Using cached GitHub data');
             return JSON.parse(cachedData);
@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const repos = await reposRes.json();
 
             const data = { profile, repos };
-            
+
             localStorage.setItem(`gh_data_${USERNAME}`, JSON.stringify(data));
             localStorage.setItem(`gh_time_${USERNAME}`, Date.now().toString());
-            
+
             return data;
         } catch (error) {
             console.error('GitHub API Error:', error);
-            
+
             // Try to use expired cache as fallback
             if (cachedData) {
                 console.log('Using expired cache as fallback');
@@ -58,27 +58,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function processData(data) {
         const repos = data.repos.filter(repo => !repo.fork); // Exclude forks
-        
+
         let totalStars = 0;
         let totalForks = 0;
         let securityProjects = 0;
         const languages = {};
-        
+
         const securityKeywords = ['security', 'ctf', 'pentest', 'vulnerability', 'hack', 'exploit', 'malware'];
-        
+
         repos.forEach(repo => {
             totalStars += repo.stargazers_count;
             totalForks += repo.forks_count;
-            
+
             // Language counting
             if (repo.language) {
                 languages[repo.language] = (languages[repo.language] || 0) + (repo.size || 1);
             }
-            
+
             // Security projects
             const isSecurity = repo.topics?.some(topic => securityKeywords.includes(topic.toLowerCase())) ||
-                               securityKeywords.some(kw => repo.name.toLowerCase().includes(kw) || (repo.description && repo.description.toLowerCase().includes(kw)));
-            
+                securityKeywords.some(kw => repo.name.toLowerCase().includes(kw) || (repo.description && repo.description.toLowerCase().includes(kw)));
+
             if (isSecurity) securityProjects++;
         });
 
@@ -91,12 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }))
             .sort((a, b) => b.percent - a.percent)
             .slice(0, 5);
-            
+
         // Top Repos
         const topRepos = [...repos]
             .sort((a, b) => b.stargazers_count - a.stargazers_count)
             .slice(0, 3);
-            
+
         // Recent Repo (first item in array since API sorts by updated)
         const recentRepo = data.repos.length > 0 ? data.repos[0] : null;
 
@@ -157,13 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="stat-label">Security Projects</span>
                 </div>
             </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="ph ph-file-pdf"></i></div>
-                <div class="stat-info">
-                    <span class="stat-value">12</span>
-                    <span class="stat-label">Total Reports</span>
-                </div>
-            </div>
         `;
 
         // Render Languages
@@ -185,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `;
             }).join('');
-            
+
             // Animate language bars
             setTimeout(() => {
                 const bars = elements.languages.querySelectorAll('.lang-bar-fill');
